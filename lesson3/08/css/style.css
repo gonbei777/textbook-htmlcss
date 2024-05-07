@@ -1,0 +1,43 @@
+@charset 'utf-8';
+
+a {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+    padding: 1em;
+    text-align:center;
+}
+
+@media screen and (min-width: 960px) {
+    a:hover {
+        opacity: 0.7;
+    }
+}
+
+a.text-link {
+    color: #008000;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+}
+
+a.button-link {
+    background: #ffd700;
+    text-decoration: none;
+    color: #ff4500;
+    font-size: 20px;
+}
+
+a.button-link2 {
+    background: #1e90ff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid #191970;
+}
+
+a.button-link2:active {
+    border-bottom: none;
+    /* transform: translateY(4px); */
+    translate: 0 4px;
+}

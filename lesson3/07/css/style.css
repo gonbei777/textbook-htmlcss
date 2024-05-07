@@ -1,0 +1,38 @@
+@charset 'utf-8';
+
+div {
+    border: 1px solid tomato;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .max {
+        background-color: #00c821;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .min {
+        background-color: darkorange;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 959px) {
+    .between {
+        background-color:greenyellow;
+    }
+}
+
+
+/*モバイルファースト*/
+.min {
+    border: 5px solid salmon;
+}
+@media screen and (min-width: 600px) {
+    .min {
+        border: 10px solid salmon;
+        padding: 30px;
+    }
+}
