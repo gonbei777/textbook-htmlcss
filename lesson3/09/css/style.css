@@ -16,3 +16,26 @@ ul li::before {
     margin-right: 4px;
     vertical-align: middle;
 }
+
+ol {
+    border: 10px solid #ffc43d;
+    padding: 20px 40px;
+}
+
+ol li {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background: url(../img/arrow.png) no-repeat left bottom;
+    /* background-image: url(); */
+    /* background-repeat: no-repeat */
+    /* background-position: left bottom */
+}
+
+ol li:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background: transparent;/*色: 透明（初期値）その他の値も初期値にリセットされる*/
+}
+/* ol li:last-child {} */
+
+/* かきくけこ */
