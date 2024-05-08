@@ -16,3 +16,18 @@ table caption {
   color: #666;
   /* caption-side: bottom; */
 }
+
+.col-1 {
+  width: 20%;
+}
+.col-2 {
+  width: 40%;
+}
+.col-3 {
+  width: 40%;
+}
+
+th {
+  background: #a50;
+  color: #fff;
+}
