@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: 40px auto 0;
+  border: 1px dashed #ccc;
+  text-align: center;
+}
