@@ -1,0 +1,64 @@
+@charset 'utf-8';
+
+* {
+  box-sizing: border-box;
+}
+
+ul.gnav-list-1 {
+  background: #1b9aaa;
+  padding: 0;
+  text-align: center;
+}
+
+ul.gnav-list-1 li {
+  /* display: list-item; */
+  display: inline-block;
+}
+
+ul.gnav-list-1 li a {
+  display: block;
+  padding: 1em;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* １行目のスタイルのみ */
+ul.gnav-list-1 li a::first-line {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+ul.gnav-list-1 li a:hover {
+  background: #14727e;
+}
+
+/* ナビゲーション２ */
+ul.gnav-list-2 {
+  background: #f0dcd4;
+  padding: 0;
+  text-align: center;
+}
+
+ul.gnav-list-2 li {
+  display: inline-block;
+}
+
+ul.gnav-list-2 li a {
+  display: block;
+  padding: 20px 20px 10px;
+  color: #7b645d;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+ul.gnav-list-2 li a:hover {
+  padding-bottom: 4px;
+  border-bottom: 6px solid #7b645d;
+}
+
+ul.gnav-list-2 li a img {
+  display: block;
+  height: 24px;
+  margin: 0 auto 1em;
+}
