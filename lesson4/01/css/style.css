@@ -14,3 +14,41 @@ section {
   border: 1px dashed #ccc;
   text-align: center;
 }
+
+h2 {
+  margin-bottom: 1em;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: #09b;
+  color: #fff;
+  padding: 1em;
+  flex-basis: 30%;
+  /* flex-shrink: 0;
+  flex-grow: 1; */
+}
+
+.flex-item dt {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.1em;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-item {
+    margin: 0 1em 1em;
+  }
+}
