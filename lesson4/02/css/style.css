@@ -16,6 +16,76 @@ img {
 }
 
 .container {
-  width: 1000px;
+  /* width: 1000px; */
+  width: 100%;
+  max-width: 1000px;
   margin: 20px auto;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: 320px 320px 320px; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    /* width: 320px; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+
+/* グリッドを使用したレイアウト */
+.layout {
+  display: grid;
+  grid-template-columns: [COL1 ああ] 1fr [COL2] 2fr [COL3];
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    /*１行目*/
+    "header header"
+    /*２行目*/
+    "sidebar main"
+    /*３行目*/
+    "footer footer"
+  ;
+  grid-gap: 10px;
+  /*セル内の主軸の配置*/
+  justify-items: end;
+  /*セル内の交差軸の配置*/
+  align-items: start;
+}
+
+header {
+  background-color: tomato;
+  grid-column: COL1 / 3;
+  grid-row: 1 / 2;
+}
+
+aside {
+  background-color: gold;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+main {
+  background-color: lightseagreen;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+footer {
+  background-color: coral;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.extra {
+  background-color: hotpink;
+  grid-area: header;
 }
