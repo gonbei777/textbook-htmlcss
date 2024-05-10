@@ -1,0 +1,41 @@
+@charset 'utf-8';
+
+section {
+  width: 200px;
+  background-color: indianred;
+  margin-bottom: 100px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.relative img {
+  /* 初期値: static */
+  position: relative;
+  top: 60px;
+  left: 100px;
+}
+
+.absolute {
+  position: relative;
+}
+
+.absolute img {
+  position: absolute;
+  top: 60px;
+  left: 100px;
+}
+
+.fixed {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.sticky img {
+  position: sticky;
+  top: 20px;
+}

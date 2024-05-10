@@ -1,0 +1,66 @@
+@charset 'utf-8';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background: #e2d0bc;
+}
+
+section {
+  margin: 0 auto;
+  width: 1000px;
+  max-width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.text-box {
+  font-family: "游明朝", YuMincho, serif;
+  width: 600px;
+  padding: 20px;
+  background: #fff;
+  /* insetをつけると内側シャドウ */
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 320px;
+  left: 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.img-box {
+  width: 70%;
+  margin-left: 30%;
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    width: 100%;
+  }
+
+  .text-box {
+    width: 90%;
+    top: 60vw;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .img-box {
+    width: 100%;
+    margin-left: 0;
+  }
+}
