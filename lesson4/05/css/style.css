@@ -1,0 +1,50 @@
+@charset 'utf-8';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ナビゲーションの装飾 */
+header {
+  width: 100vw;
+}
+
+ul {
+  background: #37bd82;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 1em;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+ul li a::after {
+  content: url(../img/arrow.png);
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+ul li a:hover {
+  background: #2c9869;
+}
+
+ul.sub-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+ul.sub-list li {
+  width: 100%;
+}
