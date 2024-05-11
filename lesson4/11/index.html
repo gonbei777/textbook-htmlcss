@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <h1>お問い合わせフォーム</h1>
+
+  <form action="program.php" method="post">
+    <dl>
+      <!-- .form-item*5>dt+dd -->
+      <div class="form-item">
+        <dt>お名前</dt>
+        <dd>
+          <input type="text" name="userName">
+        </dd>
+      </div>
+      <div class="form-item">
+        <dt><label for="email">メールアドレス</label></dt>
+        <dd>
+          <input type="email" name="userEmail" id="email">
+        </dd>
+      </div>
+      <div class="form-item">
+        <dt>職業</dt>
+        <dd>
+          <!-- checkedはブーリアン(真偽)属性 -->
+          <label class="label-radio"><input type="radio" name="job" value="学生" checked>学生</label>
+          <label class="label-radio"><input type="radio" name="job" value="会社員">会社員</label>
+          <label class="label-radio"><input type="radio" name="job" value="その他">その他</label>
+
+          <input type="radio" name="job" id="politician">
+          <label for="politician">政治家</label>
+
+        </dd>
+      </div>
+      <div class="form-item">
+        <dt>お問い合わせ種別</dt>
+        <dd>
+          <select name="messageType">
+            <option value="商品について">商品について</option>
+            <option value="採用について">採用について</option>
+            <option value="その他のお問い合わせ" selected>その他のお問い合わせ</option>
+          </select>
+        </dd>
+      </div>
+      <div class="form-item">
+        <dt></dt>
+        <dd></dd>
+      </div>
+    </dl>
+  </form>
+
+</body>
+
+</html>
