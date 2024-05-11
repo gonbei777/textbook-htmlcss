@@ -1,0 +1,60 @@
+@charset 'utf-8';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* レイアウト */
+footer {
+  width: 100%;
+  background: #7b645d;
+  padding: 60px 0;
+  text-align: center;
+  color: #504543;
+}
+
+.footer-inner {
+  width: 1000px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.footer-inner nav {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.footer-inner nav ul {
+  list-style: none;
+}
+
+.footer-inner nav ul li {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #b48456;
+}
+
+@media screen and (min-width:960px) {
+  a:hover {
+    text-decoration: underline;
+  }
+}
