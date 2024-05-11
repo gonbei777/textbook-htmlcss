@@ -43,8 +43,30 @@ ul.sub-list {
   position: absolute;
   top: 100%;
   left: 0;
+  display: none;
 }
 
 ul.sub-list li {
   width: 100%;
+}
+
+ul.gnav-list li:hover>ul.sub-list {
+  display: block;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  margin-top: 60px;
+}
+
+main div {
+  background: #eee;
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto 40px;
 }
