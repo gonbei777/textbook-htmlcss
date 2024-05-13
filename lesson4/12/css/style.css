@@ -1,0 +1,70 @@
+@charset 'utf-8';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#gnav-content {
+  position: fixed;
+  top: 0;
+  /* left: -100%; */
+  z-index: 100;
+  width: 100%;
+  max-width: 240px;
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+ul.gnav-list {
+  background: #1b9aaa;
+  padding: 0;
+  height: 100vh;
+  text-align: center;
+}
+
+ul.gnav-list li {
+  display: block;
+}
+
+ul.gnav-list li a {
+  display: block;
+  padding: 1.5em;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+ul.gnav-list li a::first-line {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.gnav-hidden {
+  display: none;
+}
+
+#gnav-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  background: #1b9aaa url(../img/gnav-btn-open.png) center center no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+#gnav-black {
+  display: none;
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#gnav-input:checked~#gnav-btn {
+  background-image: url(../img/gnav-btn-close.png);
+}
