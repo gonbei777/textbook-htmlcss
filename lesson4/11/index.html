@@ -24,7 +24,7 @@
       <div class="form-item">
         <dt><label for="email">メールアドレス</label></dt>
         <dd>
-          <input type="email" name="userEmail" id="email">
+          <input type="email" name="userEmail" id="email" value="">
         </dd>
       </div>
       <div class="form-item">
@@ -51,10 +51,19 @@
         </dd>
       </div>
       <div class="form-item">
-        <dt></dt>
-        <dd></dd>
+        <dt>お問い合わせ内容</dt>
+        <dd>
+          <textarea name="message" cols="20" rows="6"></textarea>
+        </dd>
       </div>
     </dl>
+    <div class="form-submit">
+      <input type="submit" value="送信する">
+      <button><span>送信</span>する</button>
+
+      <input type="button" value="汎用ボタン">
+      <button type="button">汎用ボタン</button>
+    </div>
   </form>
 
 </body>
