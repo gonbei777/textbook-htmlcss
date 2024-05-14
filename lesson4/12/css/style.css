@@ -9,11 +9,15 @@
 #gnav-content {
   position: fixed;
   top: 0;
+  /* チェックボックスONの時 left: 0; */
   /* left: -100%; */
+  transform: translateX(-110%);
   z-index: 100;
   width: 100%;
   max-width: 240px;
   box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+  /*全プロパティ対象でアニメーション*/
+  transition: 0.3s;
 }
 
 ul.gnav-list {
@@ -67,4 +71,13 @@ ul.gnav-list li a::first-line {
 
 #gnav-input:checked~#gnav-btn {
   background-image: url(../img/gnav-btn-close.png);
+}
+
+#gnav-input:checked~#gnav-black {
+  display: block;
+}
+
+#gnav-input:checked~#gnav-content {
+  /* left: 0; */
+  transform: translateX(0);
 }
