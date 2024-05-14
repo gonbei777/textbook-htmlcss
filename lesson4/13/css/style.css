@@ -1,0 +1,161 @@
+@charset 'utf-8';
+
+div {
+  width: 100px;
+  height: 100px;
+  padding: 1em;
+  margin: 2em 2em 4em;
+  background: #ad4444;
+  color: #fff;
+  font-size: 14px;
+}
+
+.width {
+  /* 500ms = 0.5s */
+  transition: width 0.5s 0s cubic-bezier(.08, 1.43, .61, -0.55);
+  /*
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+  */
+}
+
+.width:hover {
+  width: 400px;
+}
+
+.circle {
+  transition: border-radius 0.2s;
+}
+
+.circle:hover {
+  border-radius: 50%;
+}
+
+.scale {
+  transition: transform 0.5s ease-in-out 1s;
+}
+
+.scale:hover {
+  /*XY両方1.5倍*/
+  /* scale: 1.5; */
+  transform: scale(1.5);
+
+  /* 注意（軸が回転する） */
+  /* transform: rotate(180deg) translateX(50px); */
+}
+
+@keyframes zigzag {
+  0% {
+    transform: translate(0, 0);
+    background: pink;
+  }
+
+  50% {
+    transform: translate(50px, 50px);
+  }
+
+  100% {
+    transform: translate(100px, 0);
+    background: green;
+  }
+}
+
+.sample1 {
+  animation: zigzag 2s ease 2s 3 normal;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  /*
+  animation-name: zigzag;
+  animation-duration: 2s;
+  animation-timigin-function: ease;
+  animation-delay: 0s;
+
+  animation-iteration-count: 3;
+  infinite: 無限
+
+  animation-direction: normal; 
+  逆再生: reverse
+  折り返し: alternate
+  逆折り返し: alternate-reverse
+
+  アニメーション前後のスタイルの適用
+  animation-fill-mode
+  backwards: アニメーション前のスタイルをキープ
+  forwards: アニメーション後のスタイルをキープ
+  both: アニメーション前後のスタイルをキープ
+
+  アニメーションの再生状態
+  animation-play-state
+  running: 再生（初期値）
+  paused: 一時停止
+  */
+
+}
+
+@keyframes scale-and-color {
+  0% {
+    background: #ad4444;
+    transform: scale(1);
+  }
+
+  50% {
+    background: #3946ad;
+    transform: scale(1.5);
+  }
+
+  100% {
+    background: #4dad48;
+    transform: scale(1);
+  }
+}
+
+.sample2 {
+  animation: scale-and-color 4s linear 0s infinite alternate;
+}
+
+img {
+  width: 100px;
+  margin-right: 2em;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sample3 {
+  animation: loading 1s linear 0s infinite;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+
+  8% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sample4 {
+  animation: heart .8s ease 0s infinite normal;
+}
