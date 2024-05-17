@@ -26,3 +26,130 @@ header img {
 .mv-area img {
   width: 100%;
 }
+
+/* セクション */
+section {
+  width: 100%;
+  padding: 40px 0;
+}
+
+section:nth-of-type(1) {
+  background-color: #dec200;
+}
+
+section:nth-of-type(2) {
+  background-color: #3eb6bd;
+}
+
+section:nth-of-type(3) {
+  background-color: #3d4a6d;
+}
+
+.section-inner {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h2 {
+  border-bottom: 4px solid #fff;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* list */
+ol li {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* table */
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+}
+
+th,
+td {
+  --color: #3d5a6d;
+  padding: 1em;
+  border: 1px solid var(--color);
+  color: var(--color);
+}
+
+th {
+  background-color: #bfe1f6;
+}
+
+/* form */
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+form dt {
+  margin-bottom: 20px;
+}
+
+form dt,
+form label {
+  color: #fff;
+}
+
+form dt::before {
+  content: '◆';
+  margin-right: 10px;
+}
+
+form dd {
+  margin-bottom: 40px;
+  margin-left: 0;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: .5em;
+  font-size: 1.1em;
+}
+
+input[type=radio] {
+  width: 1em;
+  margin-left: 24px;
+  margin-right: 4px;
+  accent-color: seagreen;
+}
+
+button[type=submit] {
+  background-color: #3eb6bd;
+  margin: 40px auto 0;
+  display: block;
+  width: 70%;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.form-img-area img {
+  width: 100%;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+address,
+small {
+  margin-bottom: 10px;
+  color: #2f4858;
+}
