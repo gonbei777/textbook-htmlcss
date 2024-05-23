@@ -9,4 +9,81 @@ body {
     line-height: 1.5;
     color: #333;
     background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, system-ui, sans-serif;
+}
+
+/* 共通スタイル */
+.book-more {
+    text-align: center;
+}
+
+.book-more a {
+    display: inline-block;
+    padding: 8px 40px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.book-more a::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: url(../img/arrow.png) no-repeat right center;
+    background-size: contain;
+    top: 2px;
+    left: 8px;
+}
+
+/* ヘッダー */
+h1 {
+    margin-bottom: 24px;
+}
+
+h1 img {
+    max-width: 100%;
+}
+
+/* 見出し関連 */
+h2 {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+h2 img {
+    height: 3rem;
+}
+
+h3 {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* 本書の特長 */
+.feature {
+    margin-bottom: 24px;
+}
+
+.feature_01,
+.feature_02 {
+    width: 296px;
+    margin: 0 auto 24px;
+}
+
+.feature_img {
+    margin-bottom: 16px;
+}
+
+.feature_img img {
+    max-width: 100%;
+}
+
+.feature_text {
+    font-size: .75rem;
 }
