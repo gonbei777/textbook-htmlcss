@@ -87,3 +87,54 @@ h3 {
 .feature_text {
     font-size: .75rem;
 }
+
+/* 本書の章構成 */
+.contents-list {
+    margin-bottom: 24px;
+    background: url(../img/contents-list_bg.jpg) no-repeat center center #fdd;
+    background-size: cover;
+    padding: 24px 0;
+}
+
+.contents-list ul {
+    list-style: none;
+    width: 296px;
+    margin: 0 auto;
+    padding: 8px 24px;
+    font-size: 0.75rem;
+    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255 255 255 / .4);
+    backdrop-filter: blur(10px);
+}
+
+.contents-list ul li {
+    border-bottom: 1px dotted #000;
+    padding: 10px 0;
+}
+
+.contents-list ul li:last-child {
+    border-bottom: none;
+}
+
+/* 本書の著者 */
+.author {
+    margin-bottom: 24px;
+}
+
+.author dl {
+    width: 296px;
+    margin: 0 auto;
+}
+
+.author dl dt {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #000;
+}
+
+.author dl dd {
+    margin-bottom: 16px;
+    font-size: 0.75rem;
+}
