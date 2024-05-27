@@ -138,3 +138,30 @@ h3 {
     margin-bottom: 16px;
     font-size: 0.75rem;
 }
+
+/* フッタースタイル */
+.book-info {
+    height: 60vh;
+    background: url(../img/footer_bg.jpg) no-repeat center center #fdd;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-info-wrap {
+    width: 296px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.book-info-wrap p {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.book-info-wrap ul {
+    list-style: none;
+    font-size: .75rem;
+}
