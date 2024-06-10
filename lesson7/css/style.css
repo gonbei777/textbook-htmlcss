@@ -109,4 +109,40 @@ section {
   .inner {
     max-width: 1200px;
   }
+}
+
+.sp-only {
+  display: block;
+}
+
+.pc-only {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sp-only {
+    display: none;
+  }
+  .pc-only {
+    display: block;
+  }
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 200;
+}
+.header-logo-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-area {
+  width: 200px;
+  margin: 0;
+  text-align: start;
 }/*# sourceMappingURL=style.css.map */

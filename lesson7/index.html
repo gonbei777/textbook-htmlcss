@@ -4,17 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="format-detection" content="telephone=no">
+  <title>rental space MdN</title>
+  <meta name="description" content="レンタルスペースMdNの公式ホームページです。">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <h2 class="h2-title">test</h2>
+  <header class="header">
+    <div class="header-logo-menu">
+      <div class="logo-area">
+        <img src="img/site-logo_bk.svg" alt="rental space MdN">
+      </div>
 
-  <button class="btn btn-reserve">ボタン</button>
-  <a href="#" class="btn">ボタン</a>
-  <div class="btn">ボタン</div>
+      <nav class="sp-only">
+        <div class="gnav-toggle">
+          <input type="checkbox" id="gnav-input" class="gnav-hidden">
+          <label for="gnav-input" id="gnav-open"><span></span></label>
+          <label for="gnav-input" id="gnav-close" class="gnav-unshown"></label>
+          <div id="gnav-content">
+            <ul class="gnav-menu">
+              <li class="gnav-item"><a href="#service">Service<br>サービス</a></li>
+              <li class="gnav-item"><a href="#plan">Plan<br>プラン</a></li>
+              <li class="gnav-item"><a href="#access">Access<br>アクセス</a></li>
+              <li class="gnav-item"><a href="#contact">Contact<br>コンタクト</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="pc-only">
+        <ul class="gnav-menu"></ul>
+      </nav>
+
+    </div>
+  </header>
+
+
 
 </body>
 

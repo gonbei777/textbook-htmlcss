@@ -14,3 +14,48 @@
 }
 
 // モバイルとPCでの表示に関するスタイル
+.sp-only {
+  display: block;
+}
+
+.pc-only {
+  display: none;
+}
+
+@include mq {
+  .sp-only {
+    display: none;
+  }
+
+  .pc-only {
+    display: block;
+  }
+}
+
+
+// ヘッダー
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, .9);
+  z-index: 200;
+
+  // ロゴとナビゲーションをまとめるブロック
+  &-logo-menu {
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+// ロゴ共通
+.logo-area {
+  width: 200px;
+  margin: 0;
+  // text-align: left;
+  text-align: start;
+}
