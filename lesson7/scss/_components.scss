@@ -1,0 +1,47 @@
+// コンポーネントスタイル
+
+// 見出しスタイル
+// ああああいいいいうう上ええおいおお
+.h2-title {
+  position: relative;
+  text-transform: uppercase;
+  z-index: 100;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #a5d1ff;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    rotate: 45deg;
+    z-index: -1;
+  }
+
+}
+
+// ボタン関連
+.btn {
+  display: block;
+  padding: 20px 35px;
+  border-radius: 8px;
+  margin: 0 auto;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background: rgba(0, 0, 0, .7);
+    cursor: pointer;
+  }
+
+  // Web予約ボタン
+  &-reserve {
+    color: #fff;
+    background: #69f;
+  }
+
+}
+
+// 別コンポーネント...

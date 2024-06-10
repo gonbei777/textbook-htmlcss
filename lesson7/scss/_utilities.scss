@@ -1,0 +1,15 @@
+// ユーティリティスタイル
+
+// text関連
+.txt {
+
+  // 行揃え
+  &-center {
+    text-align: center;
+  }
+
+  // リード文
+  &-lead {
+    font-weight: 700;
+  }
+}

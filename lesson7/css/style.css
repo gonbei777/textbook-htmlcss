@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+h3 {
+  color: #85a7cc;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.h2-title {
+  position: relative;
+  text-transform: uppercase;
+  z-index: 100;
+}
+.h2-title::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #a5d1ff;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  rotate: 45deg;
+  z-index: -1;
+}
+
+.btn {
+  display: block;
+  padding: 20px 35px;
+  border-radius: 8px;
+  margin: 0 auto;
+  border: none;
+}
+.btn:hover, .btn:focus {
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.btn-reserve {
+  color: #fff;
+  background: #69f;
+}
+
+.txt-center {
+  text-align: center;
+}
+.txt-lead {
+  font-weight: 700;
+}
+
+.inner {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .inner {
+    max-width: 1200px;
+  }
+}/*# sourceMappingURL=style.css.map */

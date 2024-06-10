@@ -1,0 +1,19 @@
+// ミックスイン
+
+// メディアクエリ
+@mixin mq($breakpoint: medium) {
+  @if ($breakpoint ==medium) {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint ==large) {
+    @media screen and (min-width: 990px) {
+      @content;
+    }
+  }
+
+
+
+}

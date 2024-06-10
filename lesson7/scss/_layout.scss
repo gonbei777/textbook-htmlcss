@@ -1,0 +1,16 @@
+// レイアウトスタイル
+// @use './mixins';      // mixins.ミックイン名
+// @use './mixins' as m; // m.ミックスイン名
+@use './mixins' as *; // ミックスイン名
+
+// コンテンツを格納するスタイル
+.inner {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include mq {
+    max-width: 1200px;
+  }
+}
+
+// モバイルとPCでの表示に関するスタイル
