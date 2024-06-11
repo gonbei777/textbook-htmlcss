@@ -58,6 +58,11 @@
   margin: 0;
   // text-align: left;
   text-align: start;
+
+  @include mq {
+    width: 250px;
+  }
+
 }
 
 // ナビゲーション
@@ -78,7 +83,6 @@
   width: 30px;
   height: 22px;
   vertical-align: middle;
-  background-color: yellow;
 }
 
 #gnav-open {
@@ -107,7 +111,7 @@
 }
 
 #gnav-close {
-  display: none;
+  // display: none;
   position: fixed;
   z-index: 90;
   top: 0;
@@ -116,11 +120,16 @@
   height: 100%;
   background: #000;
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  translate: -100% 0;
+  transition:
+    opacity 1s ease-in-out,
+    translate 0s 1s ease-in-out; //帰り
 
   #gnav-input:checked~& {
     display: block;
     opacity: .5;
+    translate: 0 0;
+    transition: opacity 1s ease-in-out; //行き
   }
 }
 
@@ -139,6 +148,11 @@
   transition: .3s ease-in-out;
   transform: translateX(-105%);
   // translate: -105% 0;
+
+  #gnav-input:checked~& {
+    transform: translateX(0);
+    box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
+  }
 }
 
 .gnav-menu {
@@ -165,6 +179,32 @@
       font-size: 16px;
       font-weight: bold;
     }
+  }
+
+}
+
+@include mq {
+
+  .gnav-menu {
+    flex-direction: row;
+    padding-top: 15px;
+    margin: 0;
+  }
+
+  .gnav-item {
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 0;
+
+    a {
+      color: #333;
+      width: 120px;
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+
   }
 
 }

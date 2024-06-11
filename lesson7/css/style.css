@@ -1,3 +1,7 @@
+:root {
+  --main-color: #85a7cc;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -21,7 +25,7 @@ h3 {
 }
 
 h3 {
-  color: #85a7cc;
+  color: var(--main-color);
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -146,6 +150,11 @@ section {
   margin: 0;
   text-align: start;
 }
+@media screen and (min-width: 768px) {
+  .logo-area {
+    width: 250px;
+  }
+}
 
 .gnav-toggle {
   position: relative;
@@ -161,7 +170,6 @@ section {
   width: 30px;
   height: 22px;
   vertical-align: middle;
-  background-color: yellow;
 }
 
 #gnav-open {
@@ -186,7 +194,6 @@ section {
 }
 
 #gnav-close {
-  display: none;
   position: fixed;
   z-index: 90;
   top: 0;
@@ -195,11 +202,14 @@ section {
   height: 100%;
   background: #000;
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  translate: -100% 0;
+  transition: opacity 1s ease-in-out, translate 0s 1s ease-in-out;
 }
 #gnav-input:checked ~ #gnav-close {
   display: block;
   opacity: 0.5;
+  translate: 0 0;
+  transition: opacity 1s ease-in-out;
 }
 
 #gnav-content {
@@ -214,6 +224,10 @@ section {
   background: rgba(0, 0, 0, 0.8);
   transition: 0.3s ease-in-out;
   transform: translateX(-105%);
+}
+#gnav-input:checked ~ #gnav-content {
+  transform: translateX(0);
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
 }
 
 .gnav-menu {
@@ -239,4 +253,24 @@ section {
 .gnav-item a::first-line {
   font-size: 16px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .gnav-menu {
+    flex-direction: row;
+    padding-top: 15px;
+    margin: 0;
+  }
+  .gnav-item {
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .gnav-item a {
+    color: #333;
+    width: 120px;
+  }
+  .gnav-item a:hover {
+    color: var(--main-color);
+  }
 }/*# sourceMappingURL=style.css.map */
