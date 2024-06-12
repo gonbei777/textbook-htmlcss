@@ -273,4 +273,50 @@ section {
   .gnav-item a:hover {
     color: var(--main-color);
   }
+}
+.mv-area {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mv-title {
+  color: #fff;
+  text-shadow: 0 0 3px #333;
+  margin-top: 70px;
+}
+@media screen and (min-width: 768px) {
+  .mv-area {
+    width: 100%;
+    height: 600px;
+  }
+  .mv-title {
+    margin-top: 90px;
+  }
+}
+
+.info-area {
+  background-color: var(--main-color);
+}
+.info-txt {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .info-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .info-txt {
+    margin-left: 30px;
+    flex: 1;
+  }
+  .info-area img {
+    flex: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
