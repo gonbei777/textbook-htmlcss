@@ -58,7 +58,47 @@
 
     &-area img {
       flex: 1;
+      width: 50%;
     }
   }
 
+}
+
+// サービス
+.service {
+  &-area {
+    background-color: #fff;
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    flex: 40%;
+    text-align: center;
+    padding: 20px 20px 0;
+    margin: 5px;
+    border: 3px solid var(--main-color-dark);
+    border-radius: 10px;
+
+    img {
+      width: 120px;
+      margin: 0 auto;
+    }
+
+  }
+
+  @include mq {
+    &-content {
+      flex-wrap: nowrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    &-item {
+      flex: 1; // flex-grow: 1 / shrink:0 basis: 0%
+    }
+  }
 }

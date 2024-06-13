@@ -1,5 +1,6 @@
 :root {
   --main-color: #85a7cc;
+  --main-color-dark: #527acc;
 }
 
 * {
@@ -317,6 +318,37 @@ section {
     flex: 1;
   }
   .info-area img {
+    flex: 1;
+    width: 50%;
+  }
+}
+
+.service-area {
+  background-color: #fff;
+}
+.service-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-item {
+  flex: 40%;
+  text-align: center;
+  padding: 20px 20px 0;
+  margin: 5px;
+  border: 3px solid var(--main-color-dark);
+  border-radius: 10px;
+}
+.service-item img {
+  width: 120px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .service-content {
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .service-item {
     flex: 1;
   }
 }/*# sourceMappingURL=style.css.map */
