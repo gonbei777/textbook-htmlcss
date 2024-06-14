@@ -351,4 +351,62 @@ section {
   .service-item {
     flex: 1;
   }
+}
+
+.plan-area {
+  background-color: #f0f0f0;
+}
+.plan-content {
+  display: flex;
+  flex-direction: column;
+}
+.plan-item {
+  background-color: #fff;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 3px #aaa;
+}
+.plan-info {
+  padding: 0 15px 15px;
+}
+.plan-title {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--main-color-dark);
+}
+.plan-price {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid var(--main-color-dark);
+}
+.plan-list li::before {
+  content: "";
+  background: url(../img/list-marker.svg) no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin: 0 10px 3px;
+}
+@media screen and (min-width: 768px) {
+  .plan-content {
+    flex-direction: row;
+  }
+  .plan-item {
+    flex: 1;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.access-area {
+  padding-bottom: 0;
+}
+.access-area img {
+  display: block;
+  max-width: 280px;
+  max-height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px auto 30px;
 }/*# sourceMappingURL=style.css.map */
