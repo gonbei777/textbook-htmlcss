@@ -208,3 +208,21 @@
   }
 
 }
+
+// ページトップへ戻る
+.pagetop {
+  text-align: end; // rightとほぼ同義
+  padding: 15px;
+  background-color: var(--bg-gray);
+
+  a::after {
+    content: '';
+    background: url(../img/list-marker.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 3px 10px;
+    transform: rotate(-90deg);
+  }
+}
