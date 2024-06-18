@@ -226,3 +226,13 @@
     transform: rotate(-90deg);
   }
 }
+
+// フッター
+.foot {
+  &-area {
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    background-color: var(--main-color-xdark);
+  }
+}
