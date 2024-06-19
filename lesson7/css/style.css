@@ -67,6 +67,11 @@ section {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
 .h2-title {
   position: relative;
   text-transform: uppercase;
@@ -298,6 +303,26 @@ section {
   text-align: center;
   padding-top: 40px;
   background-color: var(--main-color-xdark);
+}
+.foot-logo {
+  margin: 0 auto 20px;
+}
+.foot-area_copy {
+  color: #ccc;
+  font-size: 12px;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+}
+
+.text-phone,
+.text-phone a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
 }
 
 .mv-area {

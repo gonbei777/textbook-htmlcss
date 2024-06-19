@@ -235,4 +235,28 @@
     padding-top: 40px;
     background-color: var(--main-color-xdark);
   }
+
+  &-logo {
+    margin: 0 auto 20px;
+  }
+
+  &-area_copy {
+    color: #ccc;
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+  }
+
+}
+
+//電話番号
+.text-phone,
+.text-phone a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  margin-bottom: 40px;
 }
