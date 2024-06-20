@@ -1,0 +1,137 @@
+// レイアウトスタイル
+@use './mixins' as *;
+
+// ヘッダー
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  padding: 20px;
+  width: 100%;
+
+  // ロゴ
+  &-logo {
+    margin: 0;
+  }
+
+  // ボタン
+  &-button {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    color: #000;
+
+    span {
+      margin: 0 auto;
+      width: 24px;
+      height: 3px;
+      background-color: var(--text-color);
+      transition: .3s ease;
+      position: relative;
+    }
+
+    span::before,
+    span::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      transition: .3s;
+      background-color: inherit; //親要素の背景色を継承
+    }
+
+    span::before {
+      top: -9px;
+    }
+
+    span::after {
+      top: 9px;
+    }
+  }
+
+  body.open &-button {
+    z-index: 30;
+
+    span {
+      width: 30px;
+      background-color: transparent;
+    }
+
+    span::before,
+    span::after {
+      top: 0;
+      background-color: var(--text-color);
+    }
+
+    span::before {
+      transform: rotate(45deg);
+    }
+
+    span::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  // ナビゲーション
+  &-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .9);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    transition: .3s ease;
+    transform: translateX(100%);
+  }
+
+  body.open &-nav {
+    transform: translateX(0);
+  }
+
+  @include mq {
+    padding: 30px;
+
+    // ロゴ
+    &-logo svg {
+      width: 350px;
+    }
+
+    //ボタン
+    &-button {
+      display: none;
+    }
+
+    //ナビゲーション
+    &-nav {
+      position: static;
+      transform: none;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+    }
+  }
+
+}

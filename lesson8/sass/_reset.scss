@@ -1,0 +1,50 @@
+// リセットスタイル
+@use './mixins' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  transition: .3s ease;
+  color: var(--link-color);
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+body {
+  font-size: 14px;
+  letter-spacing: 0.065em;
+  color: var(--text-color);
+
+  @include mq {
+    font-size: 18px;
+  }
+}
+
+.pc {
+  display: none;
+}
+
+@include mq {
+  .sp {
+    display: none;
+  }
+
+  .pc {
+    display: block;
+  }
+}

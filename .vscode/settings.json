@@ -8,5 +8,10 @@
       "savePathReplacementPairs": null
     }
   ],
-  "liveSassCompile.settings.watchOnLaunch": false
+  "liveSassCompile.settings.watchOnLaunch": false,
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**",
+    "/.vscode/**",
+    "/lesson7/**"
+  ]
 }
