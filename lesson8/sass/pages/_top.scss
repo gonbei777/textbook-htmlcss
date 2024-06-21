@@ -1,0 +1,31 @@
+// Topページ
+@use '../mixins' as *;
+
+// タイトル
+.top-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  font-family: var(--font-noto-sans);
+  font-size: 8vw;
+  font-weight: 900;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+
+  i {
+    display: block;
+    font-family: 'Romanesco', cursive;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @include mq {
+    font-size: 4vmax;
+
+    i {
+      display: inline;
+    }
+  }
+
+}
