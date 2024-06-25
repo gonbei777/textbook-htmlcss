@@ -1,0 +1,38 @@
+// worksページスタイル
+@use '../mixins' as *;
+
+.works {
+
+  main {
+    padding: 100px 20px;
+  }
+
+  &-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 150px 150px; // 1fr 1fr
+    grid-template-rows: repeat(6, 100px);
+    grid-gap: 20px;
+    margin: 0 auto;
+    width: 320px;
+
+    li img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @include mq(large) {
+    &-list {
+      grid-template-columns: repeat(4, 210px);
+      grid-template-rows: repeat(3, 140px);
+      grid-gap: 30px;
+      width: 930px;
+    }
+  }
+
+}
+
+::selection {
+  background-color: pink;
+}
