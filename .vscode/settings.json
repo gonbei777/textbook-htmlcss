@@ -12,6 +12,6 @@
   "liveSassCompile.settings.excludeList": [
     "/**/node_modules/**",
     "/.vscode/**",
-    "/lesson7/**"
+    "/lesson{7,8}/**"
   ]
 }

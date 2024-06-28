@@ -1,0 +1,18 @@
+// ミックスイン
+@use './variables' as *;
+
+// メディアクエリ
+@mixin mq($breakpoint: medium) {
+  @if ($breakpoint ==medium) {
+    @media screen and (min-width: map-get($breakpoints, md)) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint ==large) {
+    @media screen and (min-width: map-get($breakpoints, lg)) {
+      @content;
+    }
+  }
+
+}

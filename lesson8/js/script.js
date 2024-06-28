@@ -8,8 +8,11 @@ jQuery(function ($) {
   })
 
   // modaal
-  $('.gallery').modaal({
-    type: 'image',
-  });
+  if ($('.gallery').length !== 0) {
+    $('.gallery').modaal({
+      type: 'image',
+    });
+  }
+
 
 })
