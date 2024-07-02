@@ -55,6 +55,25 @@
     }
   }
 
+  body.open &-button {
+    .icon {
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        top: 0;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
   // ナビゲーション
   &-gnav {
     position: fixed;
@@ -83,6 +102,10 @@
       display: block;
       padding: .8em;
     }
+  }
+
+  body.open &-gnav {
+    transform: translateX(0);
   }
 
   // 768px
@@ -118,4 +141,10 @@
       }
     }
   }
+}
+
+
+footer {
+  margin: 70px 0 10px;
+  text-align: center;
 }

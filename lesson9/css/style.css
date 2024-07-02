@@ -117,6 +117,18 @@ article {
 .header-button .icon::after {
   top: 8px;
 }
+body.open .header-button .icon {
+  background-color: transparent;
+}
+body.open .header-button .icon::before, body.open .header-button .icon::after {
+  top: 0;
+}
+body.open .header-button .icon::before {
+  transform: rotate(45deg);
+}
+body.open .header-button .icon::after {
+  transform: rotate(-45deg);
+}
 .header-gnav {
   position: fixed;
   right: 0;
@@ -142,6 +154,9 @@ article {
   font-size: 18px;
   display: block;
   padding: 0.8em;
+}
+body.open .header-gnav {
+  transform: translateX(0);
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -171,4 +186,9 @@ article {
   .header-logo img {
     width: 360px;
   }
+}
+
+footer {
+  margin: 70px 0 10px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
