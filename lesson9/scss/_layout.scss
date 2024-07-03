@@ -74,6 +74,28 @@
     }
   }
 
+  body.top &-button {
+    .icon {
+      background-color: #eee;
+
+      &::before,
+      &::after {
+        background-color: #eee;
+      }
+    }
+  }
+
+  body.top.open &-button {
+    .icon {
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        background-color: #000;
+      }
+    }
+  }
+
   // ナビゲーション
   &-gnav {
     position: fixed;

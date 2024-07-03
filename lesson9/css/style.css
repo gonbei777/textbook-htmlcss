@@ -129,6 +129,18 @@ body.open .header-button .icon::before {
 body.open .header-button .icon::after {
   transform: rotate(-45deg);
 }
+body.top .header-button .icon {
+  background-color: #eee;
+}
+body.top .header-button .icon::before, body.top .header-button .icon::after {
+  background-color: #eee;
+}
+body.top.open .header-button .icon {
+  background-color: transparent;
+}
+body.top.open .header-button .icon::before, body.top.open .header-button .icon::after {
+  background-color: #000;
+}
 .header-gnav {
   position: fixed;
   right: 0;
@@ -191,4 +203,10 @@ body.open .header-gnav {
 footer {
   margin: 70px 0 10px;
   text-align: center;
+}
+
+.hero {
+  background: url(../img/photo-hero.jpg) no-repeat center center/cover;
+  max-width: 1300px;
+  height: 420px;
 }/*# sourceMappingURL=style.css.map */
