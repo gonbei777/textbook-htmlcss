@@ -2,6 +2,7 @@
 :root {
   --text-color: #333;
   --link-color: #75af57;
+  --bg-color: #f3f2e8;
   --white: 255 255 255;
   --black: 0 0 0;
   --transition: .3s ease;
@@ -209,4 +210,75 @@ footer {
   background: url(../img/photo-hero.jpg) no-repeat center center/cover;
   max-width: 1300px;
   height: 420px;
+  margin: -70px auto 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.hero h1 {
+  font-size: 31px;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  color: rgb(var(--white));
+}
+.hero p {
+  font-size: 16px;
+  color: rgb(var(--white));
+  line-height: 1.5;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero {
+    height: 600px;
+  }
+  .hero h1 {
+    font-size: 60px;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25em;
+  }
+  .hero p {
+    font-size: 24px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.top-feature {
+  text-align: center;
+}
+.top-feature_box {
+  padding: 0 30px 20px;
+}
+.top-feature h2 {
+  font-size: 28px;
+  margin-bottom: 0.5em;
+}
+.top-feature p {
+  text-align: start;
+}
+.top-feature a {
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid var(--link-color);
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .top-feature {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+    background-color: var(--bg-color);
+    margin-top: -50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
