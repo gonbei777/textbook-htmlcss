@@ -115,3 +115,47 @@
   }
 
 }
+
+// News
+.top-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+
+  li {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 30px;
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      flex: 0 1 90px;
+      width: 90px;
+    }
+
+    time {
+      font-size: 14px;
+      color: var(--text-color);
+    }
+  }
+
+  li &_info {
+    margin-left: 20px;
+  }
+
+  li &_title {
+    margin-top: 0.25em;
+    line-height: 1.4;
+  }
+
+  @include mq {
+    li {
+      width: 50%;
+    }
+  }
+
+}

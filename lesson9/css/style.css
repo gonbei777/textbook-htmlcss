@@ -305,4 +305,39 @@ footer {
     margin-right: -30px;
     position: relative;
   }
+}
+
+.top-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.top-list li {
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+.top-list li a {
+  display: flex;
+  align-items: center;
+}
+.top-list li img {
+  flex: 0 1 90px;
+  width: 90px;
+}
+.top-list li time {
+  font-size: 14px;
+  color: var(--text-color);
+}
+li .top-list_info {
+  margin-left: 20px;
+}
+li .top-list_title {
+  margin-top: 0.25em;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .top-list li {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
