@@ -281,4 +281,28 @@ footer {
     padding-top: 100px;
     padding-bottom: 50px;
   }
+  .top-feature:last-of-type {
+    flex-direction: row-reverse;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  .top-feature_box {
+    background-color: rgb(var(--white));
+    max-width: 600px;
+    padding: 0 60px 30px 40px;
+  }
+  .top-feature:last-of-type .top-feature_box {
+    padding-right: 40px;
+    padding-left: 60px;
+  }
+  .top-feature img {
+    margin-top: 40px;
+    margin-left: -30px;
+    max-width: 48vw;
+  }
+  .top-feature:last-of-type img {
+    margin-left: 0;
+    margin-right: -30px;
+    position: relative;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -82,6 +82,36 @@
     margin-top: -50px;
     padding-top: 100px;
     padding-bottom: 50px;
+
+    &:last-of-type {
+      flex-direction: row-reverse;
+      padding-top: 50px;
+      padding-bottom: 80px;
+    }
+
+    &_box {
+      background-color: rgb(var(--white));
+      max-width: 600px;
+      padding: 0 60px 30px 40px;
+    }
+
+    &:last-of-type &_box {
+      padding-right: 40px;
+      padding-left: 60px;
+    }
+
+    img {
+      margin-top: 40px;
+      margin-left: -30px;
+      max-width: 48vw;
+    }
+
+    &:last-of-type img {
+      margin-left: 0;
+      margin-right: -30px;
+      position: relative;
+    }
+
   }
 
 }
