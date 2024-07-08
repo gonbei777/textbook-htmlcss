@@ -1,0 +1,47 @@
+@use '../mixins' as *;
+
+.faq-section {
+  max-width: 800px;
+
+  .faq-content {
+    margin-bottom: 60px;
+  }
+
+  h2,
+  p {
+    margin-top: 1.2em;
+    display: flex;
+  }
+
+  h2::before,
+  p::before {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: -0.16em;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+
+  h2::before {
+    content: 'Q';
+  }
+
+  p::before {
+    content: 'A';
+    color: #4eb0b5;
+  }
+
+  @include mq {
+
+    h2,
+    p {
+      margin-top: 2em;
+    }
+
+    h2::before,
+    p::before {
+      margin-top: -0.2em;
+      font-size: 55px;
+    }
+  }
+}
